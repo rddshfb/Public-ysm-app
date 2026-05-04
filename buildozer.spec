@@ -1,0 +1,19 @@
+[app]
+title = YSM解密工具
+package.name = ysmdecrypt
+package.domain = org.example
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas
+version = 1.0
+requirements = python3,kivy==2.3.0,plyer
+
+[buildozer]
+log_level = 2
+
+[app]
+android.permissions = READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE
+android.api = 34
+android.minapi = 21
+android.ndk = 26b
+android.enable_androidx = True
+android.archs = arm64-v8a
